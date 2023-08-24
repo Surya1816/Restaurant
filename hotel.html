@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+       
+        img{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .carousel-inner img{
+            height: 550px;
+            width: 90%;
+            position: relative;
+            left: 80px;
+            
+        }
+        #carouselExampleAutoplaying{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 80px;
+        }
+        
+       /* frequent watched */
+       h2{
+        color: rgb(0, 0, 0);
+        display: inline;
+        
+       }
+       h2:hover{
+        color: rgb(213, 188, 188);
+       }
+       .frequent-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+       }
+       .frequent-img img{
+        height: 200px;
+        width: 20%;
+        margin: 5px;
+        border-radius: 10px;
+       }
+       .frequent-img img:hover{
+        transform: translateY(-5px);
+        transform: scale(1.2);
+        filter: drop-shadow();
+        transition: all 0.5s ease-in-out ;
+        border-radius: 10px;    
+        box-shadow: 3px 3px 3px black;
+    }
+    .abt h3{
+        display: inline-block;
+        height: 30px;
+        width: 300px;
+        color: white;
+        font-size: 20px;
+    }
+    .b h4{
+        display: inline-block;
+        height: 20px;
+        width:300px;
+        color: whitesmoke;
+        font-size: 18px;
+    }
+    .b h4:hover{
+        color: white;
+        font-size: 22px;
+    }
+    #north{
+      margin-top: 60px;
+    }
+
+    .home{height: 600px;
+        width: 100%;
+       background-image:url(home.jpg) ;
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    .nt img{
+        border-radius: 50%;
+        margin-left: 60px;
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        top: 180px;
+    }
+    .nt img:hover{
+        transform: translateY(-5px);
+        transform: scale(1.2);
+        filter: drop-shadow();
+        transition: all 0.5s ease-in-out ;
+        border-radius: 10px;    
+        box-shadow: 3px 3px 3px black;
+    }
+    .st img{
+        border-radius: 50%;
+        margin-left: 60px;
+        height: 250px;
+        width: 250px;
+        position:absolute;
+        left: 300px;
+        top:180px;
+    } 
+    .st img:hover{
+        transform: translateY(-5px);
+        transform: scale(1.2);
+        filter: drop-shadow();
+        transition: all 0.5s ease-in-out ;
+        border-radius: 10px;    
+        box-shadow: 3px 3px 3px black;
+    }
+    .cb img{
+        border-radius: 50%;
+        margin-left: 60px;
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        left: 600px;
+        top: 180px;
+    }
+    .cb img:hover{
+        transform: translateY(-5px);
+        transform: scale(1.2);
+        filter: drop-shadow();
+        transition: all 0.5s ease-in-out ;
+        border-radius: 10px;    
+        box-shadow: 3px 3px 3px black;
+    }
+     .c3 img{
+        border-radius: 50%;
+        margin-left: 60px;
+        height: 250px;
+        width: 250px;
+        position: absolute;
+        left: 900px;
+        top: 180px;
+    }
+    .c3 img:hover{
+        transform: translateY(-5px);
+        transform: scale(1.2);
+        filter: drop-shadow();
+        transition: all 0.5s ease-in-out ;
+        border-radius: 10px;    
+        box-shadow: 3px 3px 3px black;
+    }
+    .title{
+           position: absolute;
+           top: 420px;
+           left: 30px;
+            height: 400px;
+            width:90%;
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            color: white;
+    
+
+        }
+        .a{text-align: center;
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 3px 2px 5px black;
+            height: 100px;
+            width: 200px;
+          
+            border-radius: 10px;
+            display: flex;
+        align-items: center;
+        justify-content: center;            
+            
+        }
+        .np{
+            height: 30px;
+            width:90%;
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            position: relative;
+            left: 20px;
+        }
+        .n{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            text-align: center;
+            height: 60px;
+            width: 200px;
+            display: flex;
+        align-items: center;
+        justify-content: center;            
+         }
+         .sp{
+            height: 30px;
+            width:90%;
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            position: relative;
+            left: 20px;
+        }
+        .s{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            text-align: center;
+            height: 60px;
+            width: 200px;
+            display: flex;
+        align-items: center;
+        justify-content: center;            
+         }
+         .ta{
+            height: 30px;
+            width:90%;
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            position: relative;
+            left: 20px;
+        }
+        .t{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            text-align: center;
+            height: 60px;
+            width: 200px;
+            display: flex;
+        align-items: center;
+        justify-content: center;            
+         }
+         .ch{
+            height: 30px;
+            width:90%;
+            display: flex;
+            align-items:center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            position: relative;
+            left: 20px;
+        }
+        .c{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            text-align: center;
+            height: 60px;
+            width: 200px;
+            display: flex;
+        align-items: center;
+        justify-content: center;            
+         }
+        s{
+            font-size: 15px;
+        }
+        .b{
+            height: 400px;
+            width:100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap; 
+            align-items: center;
+        }
+        .a{
+            height: 300px;
+            width: 300px;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: justify;
+             display: flex;
+        align-items: flex-start;
+        justify-content: center; 
++        }
+.a img{
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+}
+        h3{
+            text-align:center;
+
+        }
+
+    </style>
+</head>
+
+<body><div class="home">
+    <img src="para.png" alt="" height="200px" width="400px">
+    <div class="nt">
+        <a href="#north"><img src="nt.jpg" alt=""></a>        
+    </div>
+    <div class="st">
+<a href="#south"><img src="st.jpg" alt=""></a>
+    </div>
+    <div class="cb">
+<a href="#non"><img src="cb.jpg" alt=""></a>   
+ </div>
+    <div class="c3">
+<a href="#chin"><img src="c3.jpg" alt=""></a>    
+</div>
+<div class="title">
+    <div class="a"><h3>North-Indian</h3></div>
+    <div class="a"><h3>South-Indian</h3></div>
+    <div class="a"><h3>Non-Veg</h3></div>
+    <div class="a"><h3>Chinese</h3></div>
+</div>
+</div>
+    
+   <div class="north">
+    
+    <div class="frequent" id="north"><br>
+        <h2>North-Indian</h2>
+        <div class="jog">
+            <!-- <h3>North-Indian Thali</h3> -->
+    <div class="b">
+       <div class="a"> <img src="no.jpg" alt=""></div>
+       <div class="a"> <p>Today's Special: <br> North-Indian Thali <br>
+    2 rotis, <br>
+panner butter masala,Gobi <br>
+Papad, Jamoon <br> Veg-Biryani, <br> Bindi-Fry,Curd Rice <br>
+Price : &#8377 300 <s>&#8377 340</s> 
+</p>
+    </div>
+      
+    </div>
+        </div>
+        
+                  <div class="frequent-img">
+                     <img src="n1.jpg" alt="">
+            <img src="n2.jpg" alt="">
+            <img src="n3.jpg" alt="">
+            <img src="n4.jpg" alt="">
+        </div>
+        
+       
+    </div>
+    <div class="np">
+        <div class="n"><p>Roti-&#8377 45 </p></div>
+    <div class="n"><p> Tikka-&#8377 210 <s>&#8377 240</s></p></div>
+    <div class="n"><p>Veg-Biryani-&#8377 190<s>&#8377 220</s></p></div>
+    <div class="n"><p>Bindi-Fry-&#8377 145 </p></div>
+    </div>
+   </div>
+
+   
+    <div class="south" id="south"><br>
+        <h2>South-Indian</h2>
+        <div class="jog">
+            <!-- <h3>South-Indian Thali</h3> -->
+    <div class="b">
+       <div class="a"> <img src="south.jpg" alt=""></div>
+       <div class="a"> <p>Today's Special: <br>South-Indian Thali <br>
+    2 Chapathi, <br>
+Veg masala,Gobi <br>
+Papadi, Jamoon <br> Pulyogere, <br> Bindi-Fry, Lemon rice <br> Rice,Sambar <br>
+Price : &#8377 300 <s>&#8377 340</s> 
+</p>  </div>
+      
+    </div>
+        </div>
+        <div class="frequent-img">
+            <img src="s1.jpg" alt="">
+            <img src="s2.jpg" alt="">
+            <img src="s3.jpg" alt="">
+            <img src="s4.jpg" alt="">
+  
+        </div>
+        <div class="sp">
+            <div class="s"><p>Dosa- &#8377 280 </p></div>
+        <div class="s"><p>Idly-&#8377 50 </p></div>
+        <div class="s"><p>Poori-&#8377 60<s>&#8377 80</s> </p></div>
+        <div class="s"><p>Neer Dosa- &#8377 70</p></div>
+        </div>
+    </div>
+    <div class="non" id="non"><br>
+        <h2>Non-Veg</h2>
+        <div class="jog">
+            <!-- <h3>Non-Veg Thali Thali</h3> -->
+    <div class="b">
+       <div class="a"> <img src="non.webp" alt=""></div>
+       <div class="a"> <p>Today's Special: <br>Non-Veg Thali <br>
+    2 Roti, <br>
+Chicken masala,Gobi <br>
+Kabab, Lollipop,<br> Chicken Biryani, <br> Chicken 65,  rice <br> rasam <br>
+Price : &#8377 400 <s>&#8377 380</s> 
+</p>  </div>
+      
+    </div>
+        </div>
+        <div class="frequent-img">
+            <img src="t1.jpg" alt="">
+            <img src="t2.jpg" alt="">
+            <img src="t3.jpg" alt="">
+            <img src="t4.jpg" alt="">
+      
+           
+        </div>
+        <div class="ta">
+            <div class="t"><p> Tandoori-&#8377 390 <s>&#8377 410</s></p></div>
+        <div class="t"><p>Alfaham-&#8377 380 <s>&#8377 410</s> </p></div>
+        <div class="t"><p>Biryani-&#8377 290 <s>&#8377 310</s> </p></div>
+        <div class="t"><p>Tikka-Masala-&#8377 145</p></div>
+        </div>
+       
+    </div>
+
+    <div class="chin" id="chin"><br>
+        <h2>Chinese</h2>
+        <div class="frequent-img">
+            <img src="c1.jpg" alt="">
+            <img src="c2.jpg" alt="">
+            <img src="c3.jpg" alt="">
+            <img src="c4.jpg" alt="">
+            
+          
+        </div>
+        <div class="ch">
+            <div class="c"><p>Noodles-&#8377 140 <s>&#8377 160</s></p></div>
+        <div class="c"><p>Manchurian-&#8377 230  </p></div>
+        <div class="c"><p>Momos-&#8377 190 <s>&#8377 210</s> </p></div>
+        <div class="c"><p>Paneer Dry-&#8377 145  </p></div>
+        </div>
+
+        <div class="bev" id="chin"><br>
+            
+            <h2>Bevarages</h2>
+            <div class="frequent-img">
+                <img src="b1.jpg" alt="">
+                <img src="b2.jpg" alt="">
+                <img src="b3.jpg" alt="">
+                <img src="b4.jpg" alt="">
+                
+              
+            </div>
+            <div class="ch">
+                <div class="c"><p>Water-&#8377 40/l</p></div>
+            <div class="c"><p>Sprite-&#8377 40/500ml  </p></div>
+            <div class="c"><p>Coke-&#8377 40/500ml  </p></div>
+            <div class="c"><p>Soda-&#8377 45/glass  </p></div>
+            </div>
+       
+    </div>
+    
+    <!-- about
+    <div id="#abt">
+        <h2>About</h2>
+      
+        <div class="b">
+            <h4><a href="">Paradise</a></h4>
+            <h4><a href="tel:8105624566">Contact Us</a></h4>
+            <h4><a href="">www.paradise.com</a></h4>
+            <h4><a href="https://api.whatsapp.com/send?phone=8105624192">whatsapp</a></h4>
+        </div>
+        
+    </div> -->
+    
+</body>
+</html>
